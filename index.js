@@ -15,7 +15,7 @@ app.get('/', async (req, res) => {
     await sleep(10000);
 
     console.log("Waiting done");
-    res.send({status: "OK"})
+    res.status(200).send({status: "OK"})
 })
 
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
