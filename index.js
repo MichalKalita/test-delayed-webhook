@@ -8,7 +8,7 @@ function sleep(ms) {
     });
   }   
 
-app.get('/', async (req, res) => {
+app.all('/', async (req, res) => {
     console.log(req)
     console.log("Waiting");
 
